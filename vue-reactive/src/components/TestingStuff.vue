@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button class="bg-black-500">Test</button>
+        <button class="text-9xl bg-amber-400">Test</button>
         <h1>Test 2</h1>
     </div>
 </template>
