@@ -1,12 +1,11 @@
 <template>
-  <div>
-    <TestingStuff></TestingStuff>
-    <h1>Test</h1>
+  <div class="flex justify-center items-center">
+    <CircleChart></CircleChart>
   </div>
 </template>
 
 <script setup>
-import TestingStuff from '../components/TestingStuff.vue'
+import CircleChart from '../components/CircleChart.vue'
 </script>
 
 <style lang="css" scoped>
