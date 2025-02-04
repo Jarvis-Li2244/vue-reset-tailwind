@@ -3,19 +3,22 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-    
-    <nav>
-      <div class="flex bg-gray-800 mb-2">
-        <RouterLink class="text-5xl text-emerald-600 mx-[3vw]" to="/">Home</RouterLink>
-        <RouterLink class="text-5xl text-emerald-600 mx-[3vw]" to="/profile">Profile</RouterLink>
-      </div>
-    </nav>
+  <div class="page">
+    <div class="flex bg-slate-800 h-[4vw] items-center">
+      <RouterLink class="text-[2vw] text-sky-500 px-[3vw] font-serif underline" to="/">Home</RouterLink>
+      <RouterLink class="text-[2vw] text-sky-500 px-[3vw] font-serif underline" to="/profile">Profile</RouterLink>
+    </div>
 
-    <RouterView />
+    <RouterView/>
+  </div>
 </template>
 
 
 
-<style scoped>
-
+<style lang="css" scoped>
+.page{
+  background-color: rgb(40, 62, 87);
+  width: 100vw;
+  height: 100vh;
+}
 </style>

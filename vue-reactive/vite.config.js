@@ -12,6 +12,11 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss(),
   ],
+  theme: {
+    extend: {fontFamily: {
+      creepster: ['Creepster', 'serif'],
+    },},
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

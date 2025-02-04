@@ -1,7 +1,7 @@
 <template>
-  <div class="flex justify-center items-center">
-    <CircleChart></CircleChart>
-  </div>
+    <div class="flex justify-center items-center">
+      <CircleChart></CircleChart>
+    </div>
 </template>
 
 <script setup>

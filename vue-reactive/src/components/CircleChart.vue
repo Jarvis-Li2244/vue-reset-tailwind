@@ -1,11 +1,11 @@
 <template>
-    <div class="bg-black rounded-[50%] w-[50vw] h-[50vw]">
-        
+    <div class="bg-white rounded-[50%] w-[45vw] h-[45vw] m-6">
+        <CircleSection></CircleSection>
     </div>
 </template>
 
 <script setup>
-
+import CircleSection from './CircleSection.vue';
 </script>
 
 <style lang="css" scoped>
