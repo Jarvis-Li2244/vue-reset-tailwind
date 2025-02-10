@@ -8,7 +8,6 @@
 <script setup>
 import CircleSection from './CircleSection.vue';
 
-
 </script>
 
 <style lang="css" scoped>

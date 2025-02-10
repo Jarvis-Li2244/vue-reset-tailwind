@@ -5,15 +5,12 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <div class="page">
     <div class="header flex h-[10vh] items-center">
-      <RouterLink class="text-[2vw] text-emerald-600 rounded-lg bg-white mx-[2vw] px-[4vw] font-serif font-semibold underline" to="/">Home</RouterLink>
-      <RouterLink class="text-[2vw] text-emerald-600 rounded-lg bg-white mx-[2vw] px-[4vw] font-serif font-semibold underline" to="/profile">Profile</RouterLink>
+      <RouterLink class="text-[2vw] text-emerald-500 rounded-lg bg-white mx-[2vw] px-[4vw] font-serif font-semibold underline" to="/">Home</RouterLink>
+      <RouterLink class="text-[2vw] text-emerald-500 rounded-lg bg-white mx-[2vw] px-[4vw] font-serif font-semibold underline" to="/profile">Profile</RouterLink>
     </div>
-    <div class="interactive flex h-[90vh] justify-evenly items-center">
-      <RouterView/>
-      <div class="infobox w-[28vw] h-5/6 bg-teal-100 rounded-xl border-6">
-        <h1 class="text"></h1>
-      </div>
-    </div>
+      
+    <RouterView/>
+
   </div>
 </template>
 
@@ -28,11 +25,5 @@ import { RouterLink, RouterView } from 'vue-router'
 .header{
   background-color: rgb(0, 146, 146);
 }
-.infobox{
-  border-color: rgb(0, 146, 146);
-  overflow-y: scroll;
-}
-.text{
-  font-size: 32;
-}
+
 </style>

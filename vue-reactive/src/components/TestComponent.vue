@@ -1,8 +1,5 @@
 <template>
-    <div>
-        <h1>Text</h1>
-        <h1 v-for="sect in circleSects" :key="sect.angle">{{ sect.angle }}</h1>
-    </div>
+    <div class="bg-black w-[45vw]" v-for="(sect) in circleSects"><h1>{{ angle, initColor }}</h1></div>
 </template>
 
 <script setup>
