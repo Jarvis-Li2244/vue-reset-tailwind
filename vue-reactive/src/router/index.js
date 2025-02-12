@@ -17,7 +17,7 @@ const router = createRouter({
       component: ProfilePage,
     },
     {
-      path: '/card/:end',
+      path: '/card/:name',
       name: 'card',
       component: TestComponent,
       props: true,

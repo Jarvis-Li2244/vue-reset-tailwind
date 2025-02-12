@@ -19,22 +19,22 @@ const sectCirc = reactive([
   {
       color: "from-purple-600 to-fuchsia-500",
       orientation: "bg-linear-135 border-t-[1.5vw] border-l-[1.5vw] border-b-[0.5vw] border-r-[0.5vw] rounded-tl-[100%]",
-      name: "Analysts"
+      name: "analysts"
   },
   {
       color: "from-blue-600 to-sky-500",
       orientation: "bg-linear-225 border-t-[1.5vw] border-l-[0.5vw] border-b-[0.5vw] border-r-[1.5vw] rounded-tr-[100%]",
-      name: "Sentinels"
+      name: "sentinels"
   },
   {
       color: "from-orange-400 to-yellow-400",
       orientation: "bg-linear-45 border-t-[0.5vw] border-l-[1.5vw] border-b-[1.5vw] border-r-[0.5vw] rounded-bl-[100%]",
-      name: "Explorers"
+      name: "explorers"
   },
   {
       color: "from-green-700 to-emerald-500",
       orientation: "bg-linear-315 border-t-[0.5vw] border-l-[0.5vw] border-b-[1.5vw] border-r-[1.5vw] rounded-br-[100%]",
-      name: "Diplomats"
+      name: "diplomats"
   }
 ])
 
