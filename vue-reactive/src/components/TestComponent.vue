@@ -1,11 +1,15 @@
 <template>
-    <div :class=color,orientation class="w-1/2 h-1/2 border-sky-100"></div>
+    <div class="card flex flex-col justify-evenly itmes-center">
+        <h1 class="personType"></h1>
+        <div class="imageholder"><img src="" alt=""></div>
+        <h2 class="typeTitle"></h2>
+    </div>
 </template>
 
 <script setup>
 defineProps({
-    color: Object,
-    orientation: Object,
+    color: String,
+    orientation: String,
 })
 </script>
 
