@@ -1,10 +1,9 @@
 <template>
-    
+    <h1></h1>
 </template>
 
 <script setup>
-import { reactive } from 'vue';
-import TestComponent from '../components/TestComponent.vue';
+
 
 
 </script>

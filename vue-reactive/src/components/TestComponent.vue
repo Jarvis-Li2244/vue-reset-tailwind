@@ -11,6 +11,7 @@ defineProps({
     color: String,
     orientation: String,
 })
+
 </script>
 
 <style lang="css" scoped>
