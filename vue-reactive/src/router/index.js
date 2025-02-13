@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import ProfilePage from '../views/ProfilePage.vue'
-import TestComponent from '../components/TestComponent.vue'
+import SectCards from '../components/SectCards.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,9 +17,9 @@ const router = createRouter({
       component: ProfilePage,
     },
     {
-      path: '/card/:name',
-      name: 'card',
-      component: TestComponent,
+      path: '/:name',
+      name: 'sect',
+      component: SectCards,
       props: true,
     }
   ],

@@ -1,23 +1,18 @@
 
 <template>
-    <div class="card-page">
-        <h1>Card Details</h1>
-        <div class="card">
-        <h3></h3>
-        <p></p>
-        </div>
-    </div>
+    <PersonalityCard v-for="card in cards" :key="title" :card="card"/>
 </template>
 
 <script setup>
 import { reactive, onMounted } from 'vue';
 import { useRoute } from 'vue-router';
+import PersonalityCard from './PersonalityCard.vue';
 
 const route = useRoute()
 const cards = reactive([]);
 
 const cardList = [
-    { name: "analysts", title: 'Card 1', description: 'This is card number 1' },
+    { title: 'ISFJ-NTXLOIDKWHATIMDOINGYEAHKDS', name:"The Placheolder", type: "analysts",  image: 'sometype of url/link coming from images folder' },
     { name: "analysts", title: 'Card 2', description: 'This is card number 2' },
     { name: "analysts", title: 'Card 3', description: 'This is card number 3' },
     { name: "analysts", title: 'Card 4', description: 'This is card number 4' },
@@ -32,17 +27,12 @@ const cardList = [
 onMounted(() => {
     const cardName = route.params.name;
     cardList
-        .filter(item => item.name === cardName)
+        .filter(item => item.type === cardName)
         .forEach(item => cards.push(item))
 });
 </script>
 
 <style scoped>
-.card {
-    border: 1px solid #ddd;
-    padding: 16px;
-    margin: 8px;
-    width: 200px;
-}
+
 </style>
   

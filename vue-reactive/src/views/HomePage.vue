@@ -1,7 +1,7 @@
 <template>
   <div class="interactive flex h-[90vh] justify-evenly items-center">
-    <CircleChart></CircleChart>
-    <InfoBox></InfoBox>
+    <CircleChart/>
+    <InfoBox/>
   </div>
 </template>
 
