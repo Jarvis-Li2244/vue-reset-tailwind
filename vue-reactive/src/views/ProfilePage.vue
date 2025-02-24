@@ -61,6 +61,13 @@ function resetProfile() {
         info: "This card serves as a placeholder until you choose a personality card fit for you!",
         link: ""
 }]
+    name.value = ''
+}
+
+function loadProfile() {
+    resetProfile()
+    profileCard.value = savedCard[0].profCard
+    name.value = savedCard[0].name
 }
 </script>
 
