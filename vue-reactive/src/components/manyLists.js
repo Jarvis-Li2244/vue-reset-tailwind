@@ -1,4 +1,4 @@
-import { reactive } from 'vue';
+import { ref, reactive } from 'vue';
 
 export const sectCirc = reactive([
     {
@@ -154,4 +154,4 @@ export const cardList = [
     }
 ];
   
-  
+export const profileKey = ref([])

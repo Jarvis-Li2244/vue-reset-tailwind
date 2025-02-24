@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { profileKey } from "./manyLists.js";
+import { cardList, profileKey } from "./manyLists.js";
 
 
 

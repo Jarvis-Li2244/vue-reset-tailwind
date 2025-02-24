@@ -13,7 +13,7 @@
 <script setup>
 import { ref, reactive } from 'vue';
 import { useRoute } from 'vue-router';
-import { sectCirc } from "./manyLists.js"
+import { sectCirc, profileKey } from "./manyLists.js"
 
 const route = useRoute()
 
@@ -34,10 +34,9 @@ for(let i = 0; i < sectCirc.length; i++) {
     }
 }
 
-export const profileKey = reactive([])
 
 function setProfile(label) {
-    profileKey = [label]
+    profileKey.value = [label]
 }
 
 </script>
