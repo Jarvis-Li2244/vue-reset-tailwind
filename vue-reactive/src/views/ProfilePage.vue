@@ -1,8 +1,9 @@
 <template>
     <div class="w-full h-[90vh] flex">
-        <div class="w-1/3 h-[90vh] flex items-center justify-center text-emerald-600 text-semibold font-serif">
-            <button @click=resetProfile(card) class="card hover:cursor-pointer w-3/5 h-1/9 items-center rounded-xl p-2 text-[2vw] underline">Reset Profile</button>
-            <button @click=saveProfile(card) class="card hover:cursor-pointer w-3/5 h-1/9 items-center rounded-xl p-2 text-[2vw] underline">Save Profile</button>
+        <div class="w-1/3 h-[90vh] flex flex-wrap items-center justify-center text-emerald-600 text-semibold font-serif">
+            <button @click=resetProfile() class="card hover:cursor-pointer w-3/5 h-1/9 items-center rounded-xl p-2 text-[2vw] underline">Reset Profile</button>
+            <button @click=saveProfile() class="card hover:cursor-pointer w-3/5 h-1/9 items-center rounded-xl p-2 text-[2vw] underline">Save Profile</button>
+            <button @click=loadProfile() class="card hover:cursor-pointer w-3/5 h-1/9 items-center rounded-xl p-2 text-[2vw] underline">Load Profile</button>
         </div>
         <div class="w-2/3 h-[90vh] flex justify-center items-center">
             <div class="card w-5/6 h-5/6 flex items-center rounded-xl p-2">
@@ -26,36 +27,40 @@
 
 <script setup>
 import ProfileCard from '../components/ProfileCard.vue';
-import { ref, reactive } from "vue";
-import { cardList, profileKey, profileCard, sectCirc } from "../components/manyLists.js";
+import { ref } from "vue";
+import { cardList, profileKey, profileCard } from "../components/manyLists.js";
 
 for (let i = 0; i < cardList.length; i++) {
     if (cardList[i].label == profileKey.value) {
         profileCard.value = [cardList[i]]
     }
 }
-console.log(profileCard.value)
 
 const name = ref('')
-const information = [{
-    name: name,
-}]
 
-const savedCard = reactive([
+let savedCard = [
     {
         slot: 1,
         profCard: [],
-        info: [], 
+        name: '', 
     }
-])
+]
 
-function saveProfile(card) {
-    savedCard[0].profCard = [profileCard[0]]
-    savedCard[0].info = [information[0]]
+function saveProfile() {
+    savedCard[0].profCard = profileCard.value
+    savedCard[0].name = name.value
+    console.log(savedCard)
 }
 
-function resetProfile(card) {
-
+function resetProfile() {
+    profileCard.value = [{ 
+        title: 'Type', 
+        label: "Nickname", 
+        image: 'emptyImage.png', 
+        type: "", 
+        info: "This card serves as a placeholder until you choose a personality card fit for you!",
+        link: ""
+}]
 }
 </script>
 

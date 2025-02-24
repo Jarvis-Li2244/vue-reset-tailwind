@@ -155,4 +155,11 @@ export const cardList = [
 ];
   
 export const profileKey = ref([])
-export const profileCard = ref([])
+export const profileCard = ref([{ 
+  title: 'Type', 
+  label: "Nickname", 
+  image: 'emptyImage.png', 
+  type: "", 
+  info: "This card serves as a placeholder until you choose a personality card fit for you!",
+  link: ""
+}])
