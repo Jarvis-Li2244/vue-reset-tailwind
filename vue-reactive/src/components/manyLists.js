@@ -155,4 +155,4 @@ export const cardList = [
 ];
   
 export const profileKey = ref([])
-export const profileCard = reactive([])
+export const profileCard = ref([])
