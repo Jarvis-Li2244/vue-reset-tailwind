@@ -1,9 +1,10 @@
 <template>
-    <ProfileCard/>
+    <h1>{{profileKey}}</h1>
 </template>
 
 <script setup>
-import ProfileCard from '../components/ProfileCard.vue';
+import { profileKey } from "./manyLists.js";
+
 
 
 </script>

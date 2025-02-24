@@ -6,12 +6,12 @@
         </div>
         <h2 class="text-[1.5vw]">{{ title }}</h2>
         <h3 class="text-[1vw]">{{ info }}</h3>
-        <button class="hover:cursor-pointer text-[1vw] underline font-semibold">Set as Profile</button>
+        <button @click=setProfile(label) class="hover:cursor-pointer text-[1vw] underline font-semibold">Set as Profile</button>
     </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, reactive } from 'vue';
 import { useRoute } from 'vue-router';
 import { sectCirc } from "./manyLists.js"
 
@@ -32,6 +32,12 @@ for(let i = 0; i < sectCirc.length; i++) {
     if (sectCirc[i].name == cardType) {
         color = sectCirc[i].color
     }
+}
+
+export const profileKey = reactive([])
+
+function setProfile(label) {
+    profileKey = [label]
 }
 
 </script>
