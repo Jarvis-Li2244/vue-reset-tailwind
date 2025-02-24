@@ -27,29 +27,26 @@
 
 <script setup>
 import ProfileCard from '../components/ProfileCard.vue';
-import { ref } from "vue";
+import { ref } from 'vue';
 import { cardList, profileKey, profileCard } from "../components/manyLists.js";
 
 for (let i = 0; i < cardList.length; i++) {
     if (cardList[i].label == profileKey.value) {
-        profileCard.value = [cardList[i]]
+        profileCard.value = [cardList[i]];
     }
 }
 
-const name = ref('')
-
-let savedCard = [
-    {
-        slot: 1,
-        profCard: [],
-        name: '', 
-    }
-]
+const name = ref('');
 
 function saveProfile() {
-    savedCard[0].profCard = profileCard.value
-    savedCard[0].name = name.value
-    console.log(savedCard)
+    if (localStorage.getItem('userProfile')) {
+        localStorage.removeItem('userProfile');
+    }
+    const savedCard = {
+        name: name.value,
+        profCard: profileCard.value
+    };
+    localStorage.setItem('userProfile', JSON.stringify(savedCard));
 }
 
 function resetProfile() {
@@ -60,14 +57,18 @@ function resetProfile() {
         type: "", 
         info: "This card serves as a placeholder until you choose a personality card fit for you!",
         link: ""
-}]
-    name.value = ''
+    }];
+    name.value = '';
 }
 
 function loadProfile() {
-    resetProfile()
-    profileCard.value = savedCard[0].profCard
-    name.value = savedCard[0].name
+    const savedProfile = JSON.parse(localStorage.getItem('userProfile'));
+    if (savedProfile) {
+        profileCard.value = savedProfile.profCard || [];
+        name.value = savedProfile.name || '';
+    } else {
+        resetProfile();
+    }
 }
 </script>
 
