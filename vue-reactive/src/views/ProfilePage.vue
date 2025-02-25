@@ -3,7 +3,7 @@
         <div class="w-5/14 h-[90vh] flex flex-wrap items-center justify-center text-emerald-600 font-serif">
             <div class="card w-2/3 h-2/7 rounded-xl flex flex-col justify-center items-left p-4">
                 <h1 class="text-[1.5vw] font-semibold underline">Slot 1:</h1>
-                <h2 class="status text-[1.5vw] m-2 p-1 bg-sky-100 rounded-lg">{{ Status1 }}</h2>
+                <h2 class="status text-[1.25vw] m-2 p-1 bg-sky-100 rounded-lg">{{ Status1 }}</h2>
                 <div class="w-full h-1/5 flex flex-wrap justify-evenly items-center mt-1">
                     <button @click=saveProfile(1) class="card hover:cursor-pointer w-3/7 h-full items-center rounded-md p-2 text-[1vw]">Save Profile</button>
                     <button @click=loadProfile(1) class="card hover:cursor-pointer w-3/7 h-full items-center rounded-md p-2 text-[1vw]">Load Profile</button>
@@ -15,7 +15,7 @@
 
             <div class="card w-2/3 h-2/7 rounded-xl flex flex-col justify-center items-left p-4">
                 <h1 class="text-[1.5vw] font-semibold underline">Slot 2:</h1>
-                <h2 class="status text-[1.5vw] m-2 p-1 bg-sky-100 rounded-lg">{{ Status2 }}</h2>
+                <h2 class="status text-[1.25vw] m-2 p-1 bg-sky-100 rounded-lg">{{ Status2 }}</h2>
                 <div class="w-full h-1/5 flex flex-wrap justify-evenly items-center mt-1">
                     <button @click=saveProfile(2) class="card hover:cursor-pointer w-3/7 h-full items-center rounded-md p-2 text-[1vw]">Save Profile</button>
                     <button @click=loadProfile(2) class="card hover:cursor-pointer w-3/7 h-full items-center rounded-md p-2 text-[1vw]">Load Profile</button>
@@ -27,7 +27,7 @@
 
             <div class="card w-2/3 h-2/7 rounded-xl flex flex-col justify-center items-left p-4">
                 <h1 class="text-[1.5vw] font-semibold underline">Slot 3:</h1>
-                <h2 class="status text-[1.5vw] m-2 p-1 bg-sky-100 rounded-lg">{{ Status3 }}</h2>
+                <h2 class="status text-[1.25vw] m-2 p-1 bg-sky-100 rounded-lg">{{ Status3 }}</h2>
                 <div class="w-full h-1/5 flex flex-wrap justify-evenly items-center mt-1">
                     <button @click=saveProfile(3) class="card hover:cursor-pointer w-3/7 h-full items-center rounded-md p-2 text-[1vw]">Save Profile</button>
                     <button @click=loadProfile(3) class="card hover:cursor-pointer w-3/7 h-full items-center rounded-md p-2 text-[1vw]">Load Profile</button>
