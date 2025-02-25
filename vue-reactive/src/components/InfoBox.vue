@@ -58,10 +58,11 @@
         <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
             <h2 class="text-3xl font-bold mb-4">Purpose of this Website</h2>
             <p class="text-lg leading-relaxed">
-                This website is just a gallery of the personality types, with the ability to set one as one's profile.
-                It is not in any way connected to the website, it is a one-off creation taking inspiration from 16 Personalities.
-                To use this site, each section on the circle refers to one of the four categories which each contain four personalities themselves.
-                The goal of this site is to allow exploration and the creation of fun profiles. To find more information, visit the actual 16 Personalities site.
+                This site serves as a gallery of personality types, allowing users to set one as their profile. 
+                Inspired by the 16 Personalities framework, it is an independent creation and not affiliated with the official website. 
+                Each section of the circle represents one of the four categories, with each containing four personality types. 
+                The site aims to encourage exploration and provide users with fun, personalized profiles. 
+                For more details, visit the official 16 Personalities website.
             </p>
         </div>
         
