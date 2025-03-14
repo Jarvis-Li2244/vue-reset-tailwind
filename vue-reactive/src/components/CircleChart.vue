@@ -6,15 +6,12 @@
       <CircleSection
         v-for="sect in sectCirc" 
         :key="sect.name" 
-        :color="sect.color" 
-        :orientation="sect.orientation"
-        :name="sect.name"
+        :sect="sect"
       />
   </div>
 </template>
 
 <script setup>
-import { reactive } from 'vue';
 import CircleSection from './CircleSection.vue';
 import { sectCirc } from './manyLists.js';
 
